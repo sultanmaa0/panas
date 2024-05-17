@@ -18,5 +18,5 @@ while true; do
     /bin/bash /root/LAVA1/near.sh "https://near.lava.build/lava-referer-598b3c64-895d-4935-8348-101f128a456e/" "46.20.106.176" "12324" "14aadb908ccf5" "17479aa549"
 
     # Wait for 5 minutes before next iteration
-    sleep 50  # 300 seconds = 5 minutes
+    sleep 30  # 300 seconds = 5 minutes
 done
