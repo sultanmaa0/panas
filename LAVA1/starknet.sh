@@ -10,7 +10,7 @@ PROXY_PORT="$3"
 PROXY_USER="$4"
 PROXY_PASS="$5"
 
-starknet_data=$(curl -s --proxy "socks5://$PROXY_HOST:$PROXY_PORT" -U "$PROXY_USER:$PROXY_PASS" -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","id":"Cipher","method":"starknet_blockNumber"}' "$RPC_URL")
+starknet_data=$(curl -s -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","id":"Sunsun","method":"starknet_blockNumber"}' "$RPC_URL")
 
 if [ $? -eq 0 ]; then
     if [ ! -d "$OUTPUT_DIR" ]; then
