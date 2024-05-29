@@ -10,7 +10,7 @@ PROXY_PORT="$3"
 PROXY_USER="$4"
 PROXY_PASS="$5"
 
-axelar_data=$(curl -s -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","id":"Sunsun","method":"status"}' "$RPC_URL")
+axelar_data=$(curl -s -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","id":"Majid","method":"status"}' "$RPC_URL")
 
 if [ $? -eq 0 ]; then
     if [ ! -d "$OUTPUT_DIR" ]; then
