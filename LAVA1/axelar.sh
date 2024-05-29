@@ -2,7 +2,7 @@
 
 RPC_URL="$1"
 
-OUTPUT_DIR="/root/LAVA1/logs"
+OUTPUT_DIR="/root/panas/LAVA1/logs"
 
 # Proxy configuration
 PROXY_HOST="$2"
