@@ -2,7 +2,7 @@
 
 RPC_URL="$1"
 
-OUTPUT_DIR="/root/LAVA1/logs"
+OUTPUT_DIR="/root/panas/LAVA1/logs"
 
 # Proxy configuration
 PROXY_HOST="$2"
@@ -10,7 +10,7 @@ PROXY_PORT="$3"
 PROXY_USER="$4"
 PROXY_PASS="$5"
 
-ethereum_data=$(curl -s -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","id":Sunsun}' "$RPC_URL")
+ethereum_data=$(curl -s -H "Content-Type: application/json" -X POST --data '{"jsonrpc":"2.0","method":"eth_gasPrice","id":Majid}' "$RPC_URL")
 
 if [ $? -eq 0 ]; then
     if [ ! -d "$OUTPUT_DIR" ]; then
